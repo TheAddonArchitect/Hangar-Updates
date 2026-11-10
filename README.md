@@ -1,122 +1,445 @@
+# HANGAR — README.md
+
+```html
 <div align="center">
 
-# HANGAR
-### Organize. Prepare. Fly.
+<h1><strong>HANGAR</strong></h1>
 
-**Your Windows companion for Microsoft Flight Simulator 2024.**
+<h3>Organize. Prepare. Fly.</h3>
 
-![Platform: Windows x64](https://img.shields.io/badge/Windows-x64-101e2e?style=for-the-badge)
-![Simulator: MSFS 2024](https://img.shields.io/badge/MSFS-2024-17334a?style=for-the-badge)
-![Release: v1.5.1](https://img.shields.io/badge/Stable_release-v1.5.1-0891b2?style=for-the-badge)
+<p><strong>Your Simulator. Your Addons. One Hangar.</strong></p>
 
-[Downloads](#downloads) · [Automatic Updates](#automatic-updates) · [Distribution Contents](#distribution-contents) · [Help](#help)
+<p>
+A modern Windows companion designed to simplify addon management,
+flight preparation, and simulator integration for Microsoft Flight Simulator 2024.
+</p>
+
+![Windows](https://img.shields.io/badge/Windows-x64-101e2e?style=for-the-badge&logo=windows11&logoColor=white)
+![MSFS](https://img.shields.io/badge/MSFS-2024-17334a?style=for-the-badge)
+![Version](https://img.shields.io/badge/Stable-v1.5.1-0891b2?style=for-the-badge)
+![Updates](https://img.shields.io/badge/Updates-Signed-047857?style=for-the-badge)
+
+<br>
+
+[**Download HANGAR**](https://github.com/TheAddonArchitect/Hangar-Updates/releases/latest) ·
+[**Release Notes**](https://github.com/TheAddonArchitect/Hangar-Updates/releases/tag/v1.5.1) ·
+[**Report an Issue**](https://github.com/TheAddonArchitect/Hangar-Updates/issues)
+
+<br>
+
+**[Overview](#overview) • [Installation](#installation) • [Automatic Updates](#automatic-updates) • [Distribution](#distribution-contents) • [Troubleshooting](#troubleshooting) • [Support](#support)**
 
 </div>
 
 ---
 
-Official distribution information for **Hangar**. This repository is reserved for installer releases and update metadata; desktop application development is maintained privately.
+## Overview
+
+**HANGAR** is a Windows desktop companion built for the Microsoft Flight Simulator 2024 community.
+
+Designed to bring essential simulator utilities into one organized environment, HANGAR provides a centralized workspace for managing addons, preparing flights, and accessing simulator-related tools.
+
+Whether you're maintaining an extensive addon library or preparing for your next flight, HANGAR helps keep your simulator environment organized and accessible.
+
+### Core Capabilities
+
+| Feature | Description |
+|:---|:---|
+| **Addon Library** | Organize and manage your aircraft, airports, scenery, liveries, and other simulator addons. |
+| **Flight Planning** | Access flight preparation and route-planning utilities. |
+| **Scenery Map** | Explore and visualize scenery locations within your simulator environment. |
+| **Flight Logbook** | Maintain records of your simulator flights and flight activity. |
+| **Companion Center** | Access simulator companion utilities and integrations. |
+| **Simulator Integration** | Configure simulator connections and related functionality. |
+| **User Guide** | Access built-in documentation and application guidance. |
+| **Automatic Updates** | Check for verified releases and install updates when convenient. |
+
+> **Development Notice**
+>
+> HANGAR is independently developed and maintained by **TheAddonArchitect**.
+>
+> This repository serves as the official distribution channel for Windows installers, release information, and secure update metadata.
+>
+> Application source code and active desktop development are maintained privately.
+
+---
 
 ## Downloads
 
-> **Hangar v1.5.1 is available.** [Download the Windows x64 installer](https://github.com/TheAddonArchitect/Hangar-Updates/releases/download/v1.5.1/Hangar-Setup-1.5.1-win-x64.exe) · [Release notes and verification files](https://github.com/TheAddonArchitect/Hangar-Updates/releases/tag/v1.5.1)
+### Latest Stable Release
 
-The [developer's flightsim.to profile](https://flightsim.to/profile/TheAddonArchitect) is also available. A direct Hangar product listing has not been provided; installers are available in this repository's [Releases](https://github.com/TheAddonArchitect/Hangar-Updates/releases/latest).
+**HANGAR v1.5.1**
 
-### First installation
+The current published release is available for Windows x64.
 
-1. Open the [latest release](https://github.com/TheAddonArchitect/Hangar-Updates/releases/latest) and review its notes.
-2. Download the Windows x64 installer provided with the release.
-3. Run the installer and follow the setup prompts.
-4. Launch Hangar and configure your simulator, Community, and addon-library locations.
+[**Download HANGAR v1.5.1 — Windows x64 Installer**](https://github.com/TheAddonArchitect/Hangar-Updates/releases/download/v1.5.1/Hangar-Setup-1.5.1-win-x64.exe)
 
-The installer is configured for a per-user installation in `%LOCALAPPDATA%\Programs\Hangar`. Application data is kept separately in `%LOCALAPPDATA%\Hangar`, unless a custom data location is configured.
+**Additional Resources**
 
-**Compatibility:** Windows x64 is the build target, with Microsoft Flight Simulator 2024 required for simulator-related features. Windows installation, upgrade, startup, and data-preservation checks run in automated Windows tests; these checks do not certify every aircraft, simulator addon, or cockpit integration.
+- [Latest Stable Release](https://github.com/TheAddonArchitect/Hangar-Updates/releases/latest)
+- [Version 1.5.1 Release Notes](https://github.com/TheAddonArchitect/Hangar-Updates/releases/tag/v1.5.1)
+- [All Published Releases](https://github.com/TheAddonArchitect/Hangar-Updates/releases)
+- [Developer Profile on Flightsim.to](https://flightsim.to/profile/TheAddonArchitect)
 
-**One-time setup:** Install this release manually to establish Hangar's trusted update key. Older builds that require a Windows publisher certificate cannot automatically switch to the new verification method. Subsequent updates require no GitHub login.
+> **Official Downloads**
+>
+> Download HANGAR exclusively from the official GitHub Releases page or another distribution channel explicitly identified by the developer.
+>
+> A direct Flightsim.to product listing is not currently provided in this document.
 
-**Windows publisher notice:** The installer does not have a Windows code-signing certificate. Windows may display an unknown-publisher warning or block it. Hangar's release signature authenticates in-app updates; it does not disable or replace Windows security protections.
+---
+
+## System Requirements
+
+| Requirement | Specification |
+|:---|:---|
+| **Operating System** | Windows x64 |
+| **Simulator** | Microsoft Flight Simulator 2024 |
+| **Architecture** | 64-bit (x64) |
+| **Internet Connection** | Required for release checks and update downloads |
+| **Installation Type** | Per-user Windows installation |
+| **Application Runtime** | Required .NET and Windows App SDK runtime components bundled with the installer |
+
+Microsoft Flight Simulator 2024 is required for simulator-dependent functionality.
+
+**Compatibility Notice**
+
+HANGAR undergoes automated Windows installation, upgrade, startup, and data-preservation testing.
+
+These tests do not guarantee compatibility with every third-party aircraft, scenery package, simulator addon, or cockpit integration.
+
+---
+
+## Installation
+
+### First-Time Installation
+
+Follow these steps to install HANGAR:
+
+1. Visit the [official Releases page](https://github.com/TheAddonArchitect/Hangar-Updates/releases/latest).
+2. Review the latest release notes and compatibility information.
+3. Download the Windows x64 installer.
+4. Run the downloaded installer.
+5. Follow the on-screen installation instructions.
+6. Launch HANGAR after installation.
+7. Configure your simulator, Community folder, and addon-library locations.
+
+### Installation Directories
+
+HANGAR separates application files from user-generated data.
+
+**Application Installation**
+
+```text
+%LOCALAPPDATA%\Programs\Hangar\
+```
+
+**Application Data**
+
+```text
+%LOCALAPPDATA%\Hangar\
+```
+
+Unless a custom data location is configured, application settings and saved library information are maintained in the default application-data directory.
+
+This separation allows application updates to replace program files without intentionally overwriting your personal configuration.
+
+### Important First-Installation Notice
+
+**Version 1.5.1 must be installed manually when migrating from older updater implementations.**
+
+This establishes HANGAR's trusted release-verification key.
+
+Older builds that depend on Windows publisher-certificate verification cannot automatically transition to the newer signed-manifest verification system.
+
+Once the current release is installed, subsequent supported updates can be checked and downloaded without a GitHub account.
+
+### Windows Security Notice
+
+The HANGAR installer is not currently signed with a Windows code-signing certificate.
+
+Windows may display an **Unknown Publisher** warning or prevent the installer from running.
+
+HANGAR uses cryptographic signatures to authenticate application updates. However, these signatures do not replace Windows code-signing requirements or bypass Windows security protections.
+
+Always verify that the installer was obtained from an official release.
+
+---
 
 ## Automatic Updates
 
-**Automatic checks. You control installation.**
+### Secure Updates. Complete Control.
 
-The current updater implementation enables automatic checks by default: at startup when a check is due, then every six hours while Hangar is running. Update checks and downloads do not require an account or sign-in. Internet access is required.
+HANGAR includes an integrated update system designed to make receiving new releases straightforward while keeping installation decisions in your control.
 
-Select **Check for Updates** in the sidebar to check immediately. The **Application Updates** panel shows the installed version, update status, and available release notes. Use **Check Again** to retry, or turn off **Automatically check for updates**; the preference is saved.
+**Automatic update checks are enabled by default.**
+
+The application checks for available stable releases:
+
+- At startup when an update check is due.
+- Every six hours while HANGAR remains running.
+- Whenever you manually request an update check.
+
+Update checks and downloads require internet connectivity but do not require a GitHub account or sign-in.
+
+### Managing Updates
+
+Open **Check for Updates** from the application sidebar.
+
+The **Application Updates** panel provides access to:
+
+| Control | Function |
+|:---|:---|
+| **Installed Version** | Displays the currently installed HANGAR version. |
+| **Update Status** | Shows whether a newer stable release is available. |
+| **Release Notes** | Displays information about an available release. |
+| **Check Again** | Immediately repeats the update check. |
+| **Download Update** | Downloads an available release for verification. |
+| **Install & Restart** | Starts the confirmed installation and restart process. |
+| **Automatically Check for Updates** | Enables or disables scheduled update checks. |
+
+Your automatic-update preference is saved between application sessions.
+
+### Update Process
 
 ```mermaid
 flowchart TD
-    A["Automatic check or Check for Updates"] --> B{"New stable version?"}
-    B -- No --> C["Keep using Hangar"]
-    B -- Yes --> D["Review version and release notes"]
-    D --> E["Choose Download Update"]
-    E --> F["Verify Hangar release signature and installer"]
-    F --> G["Choose Install & Restart and confirm"]
-    G --> H["Save data and back up the library"]
-    H --> I["Close, install, and verify the result"]
-    I --> J["Reopen Hangar on success"]
+    A["Automatic or Manual Update Check"] --> B{"New Stable Release Available?"}
+    B -->|No| C["Continue Using HANGAR"]
+    B -->|Yes| D["Review Version and Release Notes"]
+    D --> E["Download Update"]
+    E --> F["Verify Release Signature and Installer"]
+    F --> G{"Install Now?"}
+    G -->|Later| C
+    G -->|Yes| H["Confirm Installation"]
+    H --> I["Save Data and Back Up Library"]
+    I --> J["Close HANGAR and Install"]
+    J --> K["Verify Installed Files and Version"]
+    K --> L["Restart HANGAR"]
+
     classDef stage fill:#101e2e,stroke:#22d3ee,color:#e6f6ff;
     classDef decision fill:#17334a,stroke:#67e8f9,color:#e6f6ff;
-    class A,C,D,E,F,G,H,I,J stage;
-    class B decision;
+
+    class A,C,D,E,F,H,I,J,K,L stage;
+    class B,G decision;
 ```
 
-### What happens during an update
+### Update Safety and Data Protection
 
-- **Download and installation are separate actions.** Downloading does not close Hangar. You can choose **Later** at the installation confirmation.
-- **Verification happens before installation.** Hangar verifies the signed release manifest against its built-in public key, then checks the installer's size, SHA-256 checksum, and version. The separate updater repeats verification before running it.
-- **Finish active work first.** Installation is blocked during a library operation or flight recording, and if library storage is unhealthy.
-- **Your data stays separate.** The installer replaces application files; settings, addon records, thumbnails, and saved profiles remain in the data folder. Hangar saves a pre-update library backup before starting installation.
-- **Restart follows a successful installation.** The updater verifies the signed file inventory, installed application files, and version before reopening Hangar. If Windows needs a restart, it asks you to restart Windows first.
+HANGAR's updater incorporates multiple safeguards.
 
-> **Release verification:** Version 1.5.1 uses RSA-PSS/SHA-256 signed metadata and a pinned Hangar verification key. Manifests from another key, altered installers, and same-version or older installs are rejected. Development builds without signed metadata are not accepted.
+**1. Download and Installation Are Separate**
+
+Downloading an update does not automatically close the application or begin installation.
+
+You may review the available update and select **Later** when prompted to install.
+
+**2. Release Verification**
+
+Before installation, HANGAR:
+
+- Validates the signed release manifest against its embedded public verification key.
+- Checks the installer size.
+- Verifies the SHA-256 checksum.
+- Confirms the release version.
+- Rejects unsupported or invalid release metadata.
+
+The separate updater performs additional verification before executing the installation.
+
+**3. Active Operations Are Protected**
+
+Installation is blocked when:
+
+- An addon-library operation is running.
+- A flight recording is active.
+- Library storage is in an unhealthy state.
+
+Complete active operations before installing an update.
+
+**4. User Data Is Preserved**
+
+Application updates replace installed application files while keeping user data in its separate storage location.
+
+Preserved information includes:
+
+- Application settings.
+- Addon-library records.
+- Thumbnails and associated metadata.
+- Saved profiles.
+- Other persistent application data.
+
+HANGAR also creates a pre-update library backup before installation begins.
+
+**5. Installation Verification and Restart**
+
+After installation, the updater verifies:
+
+- The signed file inventory.
+- Installed application files.
+- The installed application version.
+
+HANGAR reopens after successful verification.
+
+If Windows requires a system restart, the updater requests that restart before continuing.
+
+### Cryptographic Release Verification
+
+HANGAR v1.5.1 uses **RSA-PSS with SHA-256** for signed release metadata.
+
+The verification system uses a pinned public key to authenticate official release manifests.
+
+The updater rejects:
+
+- Manifests signed using an untrusted key.
+- Modified or corrupted installer files.
+- Invalid file hashes or release metadata.
+- Same-version or older installation attempts.
+- Development builds without valid signed release metadata.
+
+> **Security Note**
+>
+> HANGAR's signed-update mechanism is designed to protect the integrity and authenticity of supported application updates.
+>
+> It does not replace Windows SmartScreen, antivirus software, or operating-system security controls.
+
+---
 
 ## Distribution Contents
 
-These files are available from each published release. Only installers and update metadata are distributed here; application source code remains private.
+This repository distributes official HANGAR installers and supporting update metadata.
 
-### Release files
+**The desktop application's source code is not included in public releases.**
 
-| Item | Purpose |
+### Published Release Assets
+
+| File | Description |
 |:---|:---|
-| `Hangar-Setup-<version>-win-x64.exe` | Windows x64 installer authenticated by the signed release manifest; no Windows publisher certificate |
-| `update-stable.json` | Signed metadata binding the release version, repository, installer, size, hashes, architecture, and installed file inventory |
-| `SHA256SUMS.txt` | SHA-256 checksum for the installer |
-| Public release notes | Release information displayed alongside the download and in the update panel; not a separate download asset |
+| `Hangar-Setup-<version>-win-x64.exe` | Windows x64 application installer. |
+| `update-stable.json` | Signed release metadata containing version, architecture, installer verification information, and installed-file inventory details. |
+| `SHA256SUMS.txt` | SHA-256 checksum for the published installer. |
+| GitHub Release Notes | Public release information and update documentation. |
 
-### Inside the installer
+Release notes are published with the GitHub release rather than distributed as a separate downloadable asset.
 
-| Component | Purpose |
+### Installer Components
+
+The Windows installer contains the components required to deploy HANGAR.
+
+| Component | Description |
 |:---|:---|
-| Hangar desktop application | Application binaries, resources, and bundled .NET / Windows App SDK runtime components |
-| `Hangar.Updater.exe` | Separate helper for verified installation and restart |
-| `release-files.json` | Signed inventory used to verify the updater and installed application files |
-| `Hangar-Cockpit.zip` | Packaged in-simulator companion addon; inclusion does not mean automatic installation into the simulator |
-| User guide and supporting assets | Bundled PDF guide, application documentation, fonts, images, and embedded reference data |
-| License and third-party notices | Terms and notices shipped with the application |
+| **HANGAR Desktop Application** | Main application binaries and supporting resources. |
+| **.NET / Windows App SDK** | Bundled runtime components required by the desktop application. |
+| `Hangar.Updater.exe` | Independent helper responsible for verified update installation and application restart. |
+| `release-files.json` | Signed inventory used for installed-file and updater verification. |
+| `Hangar-Cockpit.zip` | Packaged in-simulator companion addon. |
+| **User Guide** | Bundled PDF documentation and application guidance. |
+| **Supporting Assets** | Application fonts, images, embedded reference data, and supporting resources. |
+| **License and Notices** | Application license information and third-party notices. |
 
-AI model files are not bundled by this packaging process. Your addon collection, personal settings, and saved library data are not part of the installer.
+### Additional Packaging Information
 
-## Help
+The packaged `Hangar-Cockpit.zip` companion addon is not automatically installed into Microsoft Flight Simulator merely because it is included with the Windows installer.
 
-| Situation | Next step |
+AI model files are not bundled by the current packaging process.
+
+The installer does not include your personal addon collection, application preferences, or saved library data.
+
+---
+
+## Troubleshooting
+
+The following information covers common installation and update situations.
+
+| Situation | Recommended Action |
 |:---|:---|
-| Hangar is up to date | Your installed version matches or exceeds the current stable release. |
-| Update check fails or the server is busy | Check your connection and try **Check Again** later. Background failures do not interrupt your work. |
-| Installation is unavailable | An older or development build may lack the pinned key or signed inventory. Install the complete official release once. |
-| Verification fails | Do not run that download manually to bypass verification. Retry through Hangar or obtain a fresh download from the official release. |
-| Installation fails | Keep the data folder intact. Update logs and the pre-update library backup remain under its `Updates` folder for troubleshooting. |
+| **HANGAR is up to date** | No action is required. Your installed version matches or exceeds the current stable release. |
+| **Update check fails** | Verify internet connectivity and select **Check Again**. |
+| **Release server is unavailable** | Wait and retry later. Background update-check failures do not interrupt normal application usage. |
+| **Installation option is unavailable** | Install the latest complete official release if your current build lacks the required verification key or signed inventory. |
+| **Release verification fails** | Do not bypass verification. Retry the download through HANGAR or obtain a fresh installer from the official release. |
+| **Installation fails** | Preserve the application-data directory and review the update logs. |
+| **Windows restart is required** | Restart Windows as instructed before continuing. |
+| **Windows displays an unknown publisher** | Confirm the installer came from the official release and follow your organization's Windows security policy. |
 
-The [developer profile](https://flightsim.to/profile/TheAddonArchitect) provides project information. When reporting a problem, include the Hangar version, Windows version, error message, and steps to reproduce; remove private information from logs and screenshots.
+### Update Logs and Backups
+
+Update-related logs and pre-update library backups are maintained under the application's `Updates` data directory.
+
+Default location:
+
+```text
+%LOCALAPPDATA%\Hangar\Updates\
+```
+
+If you have configured a custom application-data location, use its corresponding `Updates` directory.
+
+**Do not delete application data while troubleshooting an installation or update failure.**
+
+---
+
+## Support
+
+### Reporting Issues
+
+If you encounter an application problem, unexpected behavior, or installation failure, report it through the project's GitHub issue tracker.
+
+[**Open a GitHub Issue**](https://github.com/TheAddonArchitect/Hangar-Updates/issues)
+
+To help investigate the problem, include:
+
+1. **HANGAR Version** — The installed application version.
+2. **Windows Version** — Your Windows operating-system version.
+3. **Problem Description** — A clear explanation of the issue.
+4. **Steps to Reproduce** — The actions that trigger the problem.
+5. **Error Details** — Any relevant messages, screenshots, or logs.
+
+Remove personal information, private file paths, account details, and sensitive data before sharing logs or screenshots.
+
+### Developer
+
+**TheAddonArchitect**
+
+Independent developer and maintainer of HANGAR.
+
+- [GitHub Profile](https://github.com/TheAddonArchitect)
+- [Flightsim.to Profile](https://flightsim.to/profile/TheAddonArchitect)
+- [HANGAR Releases](https://github.com/TheAddonArchitect/Hangar-Updates/releases)
+
+---
+
+## Disclaimer
+
+HANGAR is independent third-party software developed for use with Microsoft Flight Simulator 2024.
+
+It is not affiliated with, sponsored by, or endorsed by Microsoft Corporation or Asobo Studio.
+
+Microsoft Flight Simulator and related trademarks belong to their respective owners.
+
+**For flight simulation use only.**
 
 ---
 
 <div align="center">
 
-**HANGAR · Your Simulator. Your Addons. One Hangar.**
+<h1><strong>HANGAR</strong></h1>
 
-Independent third-party software for Microsoft Flight Simulator 2024. Not affiliated with or endorsed by Microsoft or Asobo Studio. For simulation use only.
+<h3>Your Simulator. Your Addons. One Hangar.</h3>
+
+<p><strong>Organize. Prepare. Fly.</strong></p>
+
+<p>
+Built for the Microsoft Flight Simulator 2024 community.
+</p>
+
+<p>
+<a href="https://github.com/TheAddonArchitect/Hangar-Updates/releases/latest"><strong>Download Latest Release</strong></a>
+&nbsp;·&nbsp;
+<a href="https://github.com/TheAddonArchitect/Hangar-Updates/issues"><strong>Report an Issue</strong></a>
+&nbsp;·&nbsp;
+<a href="https://flightsim.to/profile/TheAddonArchitect"><strong>Developer</strong></a>
+</p>
+
+<p>© 2026 TheAddonArchitect</p>
 
 </div>
+```
