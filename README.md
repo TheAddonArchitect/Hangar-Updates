@@ -1,6 +1,3 @@
-# HANGAR — README.md
-
-```html
 <div align="center">
 
 <h1><strong>HANGAR</strong></h1>
